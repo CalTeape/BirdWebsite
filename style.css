@@ -1,0 +1,106 @@
+
+.grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+.header {
+    /*background-image: url(background.jpg); */
+    grid-column: span 10;
+    color: #ffd900;
+    /*background-color: #3d5d76;*/
+    text-align: center;
+    font-family: 'Kaisei Opti', serif;
+    font-weight: bold;
+    font-size: large;
+}
+.nav {
+    /*background-color: #3d5d76;*/
+    grid-column: span 2;
+    grid-row: span 8;
+    color: #ffd900;
+    font-weight: bold;
+    font-family: 'Kaisei Opti', serif;
+    font-size: medium;
+    padding: 15px;
+    /*border: 2px #ffd900;
+    border-radius: 5px; */
+}
+.bird-subgrid{
+    /*background-color: #3d5d76;*/
+    grid-column: span 8;
+    grid-row: span 8;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 15px;
+    /*border: 2px solid #ffd900;
+    border-radius: 5px; */
+}
+.footer {
+    grid-column: span 10;
+    color: #007AFF;
+    font-weight: bold;
+    font-size: large;
+}
+
+.tile{
+    background-color: white;
+    border: 3px solid #ffd900;
+    border-radius: 10px;
+    width: 300px;
+    height: 500px;
+}
+
+
+img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /*object-position: 60% 30%;*/
+}
+
+.photo-box {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(to bottom, rgba(0, 0, 255, 0) 20%, rgba(255, 192, 203, 1)) url(data/images/white-heron-5.jpg) ;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+}
+  
+
+.maori-name {
+    position:relative;
+    left: 5px;
+    bottom: 50px;
+    font-size: larger;
+}
+
+.photo-credit {
+    position:relative;
+    left: 5px;
+    bottom: 57px;
+    font-size: medium;
+
+}
+
+.text-box{
+    padding-left: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+}
+
+.english-name{
+   font-size: large
+
+}
+
+.footer {
+    background-image: url(background.jpg);
+    text-align: center;
+    color: #ffd900;
+    background-color: #3d5d76;
+}
