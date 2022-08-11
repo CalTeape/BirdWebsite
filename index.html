@@ -6,6 +6,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&family=Poppins&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
         <link href="style.css" rel="stylesheet">
+        <script defer src = "script.js"></script>
         <title>
 
             Birds of Aotearoa
@@ -21,59 +22,32 @@
             </div>
 
             <div class="nav">
-
+                <h2>
                     Filter Birds
+                </h2>
+
+                <div class="filterByConservationStatus">
+                    <button onclick="myFunction()" class="dropbtn">Filter by Conservation Status</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                      <a href="#not_threatened#">Not Threatened</a>
+                      <a href="#naturally_uncommon">Naturally Uncommon</a>
+                      <a href="#relict">Relict</a>
+                      <a href="#recovering">Recovering</a>
+                      <a href="#declining">Declining</a>
+                      <a href="#nationally_increasing">Nationally Increasing</a>
+                      <a href="#nationally_vulnerable">Nationally Vulnerable</a>
+                      <a href="#nationally_endangered">Nationally Endangered</a>
+                      <a href="#nationally_critical">Nationally Critical</a>
+                      <a href="#extinct">Extinct</a>
+                      <a href="#no_data">No Data</a>
+                    </div>
+                  </div>
+
             </div>
 
             <div class="bird-subgrid">
-
-                        <div class="heron tile">
-                            <div class="photo-box">
-                                 <img src="data/images/bellbird-4.jpg" alt="Description of the image" /> 
-                                 <!--<div class="img" style ="background-image: url(bellbird-4.jpg); background-repeat: no-repeat; background-size: 125%; background-position: center;">; -->
-                                <div class="maori-name">
-                                    Korimako
-                                </div>
-                                <div class="photo-credit">
-                                    Photo by Corey Mark-O
-                                </div>
-                            </div>
-
-                            <div class="text-box">
-                                <div class="english-name">
-                                    Bellbird
-                                </div>
-                                <div class="scientific-name">
-
-                                </div>
-                            </div>
-                        </div>
-
-                    <div class="heron tile">
-                        <div class="photo-box">
-                            <!--<div class="img" style ="background-image: url(data/images/white-heron-5.jpg); background-repeat:no-repeat; background-size: 125%; background-position: center;">-->
-                             <img src="data/images/white-heron-5.jpg" alt="Description of the image" />
-
-                            <div class="maori-name">
-                                Heroni
-                            </div>
-                            <div class="photo-credit">
-                                Photo by Long Wang
-                            </div>
-                        </div>
-
-                        <div class="text-box">
-                            <div class="english-name">
-                                White Heron
-                            </div>
-                            <div class="scientific-name">
-                                Scientific Name: heronamus
-
-                            </div>
-                        </div>
-                    </div>
-
-            </div><!-- end of bird subgrid subclass-->
+            </div>
 
             <div class="footer">
                 copyright @calteape
