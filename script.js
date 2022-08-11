@@ -2,12 +2,12 @@
 const dataArray;
 
 async function main() {
-  // const fs = require('fs');
   const response = await fetch('./data/nzbird.json');
   const d = await response.text();
   const data = JSON.parse(d);
 
   dataArray = newArray[data.length];
+
   for(i = 0; i < data.length; i++){
       const birdSpecies = data[i]
       const e = document.createElement('div');
@@ -41,27 +41,24 @@ async function main() {
   }
 }
 
-
+/*
 
 function searchFilter() {
   var input, filter, maoriName, txtValue;
   input = document.getElementById('searchFilter');
   filter = input.value.toUpperCase();
 
-  for(int  = 0; i < dataArray.length; i++){
-    maoriName = dataArray[i].maori_name;
-    txtValue = maoriName.toUpperCase();
+    for(int  = 0; i < dataArray.length; i++){
+      maoriName = dataArray[i].maori_name;
+      txtValue = maoriName.toUpperCase();
 
-    if(txtValue.indexOf(filter) > -1) {
-    document.getElementById(maoriName).style.display = "";
-    }
-    else{
-      document.getElementById(maoriName).style.display = "none";
+      if(txtValue.indexOf(filter) > -1) {
+      document.getElementById(maoriName).style.display = "";
+      }
+      else{
+        document.getElementById(maoriName).style.display = "none";
 
-    }
-
-
-    
+      }  
   }
 }
 
