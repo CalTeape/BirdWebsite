@@ -26,26 +26,13 @@
                     Filter Birds
                 </h2>
 
-                <div class="filterByConservationStatus">
-                    <button onclick="myFunction()" class="dropbtn">Filter by Conservation Status</button>
-                    <div id="myDropdown" class="dropdown-content">
-                      <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-                      <a href="#not_threatened#">Not Threatened</a>
-                      <a href="#naturally_uncommon">Naturally Uncommon</a>
-                      <a href="#relict">Relict</a>
-                      <a href="#recovering">Recovering</a>
-                      <a href="#declining">Declining</a>
-                      <a href="#nationally_increasing">Nationally Increasing</a>
-                      <a href="#nationally_vulnerable">Nationally Vulnerable</a>
-                      <a href="#nationally_endangered">Nationally Endangered</a>
-                      <a href="#nationally_critical">Nationally Critical</a>
-                      <a href="#extinct">Extinct</a>
-                      <a href="#no_data">No Data</a>
-                    </div>
+                  <input type="text" id="searchFilter" onkeyup="searchFilter()" placeholder="Search for names.."> 
+
+                  <input type="text" id="searchConservationFilter" onkeyup="searchConservationFilter()" placeholder="Search by Conservation Status..">
+
+                  <div class = conservation_block>
+                        <li><span class = "circle"></span> Not Threatened </li>
                   </div>
-
-
-                  <!--<input type="text" id="searchFilter" onkeyup="searchFilter()" placeholder="Search for names.."> -->
 
             </div>
 
