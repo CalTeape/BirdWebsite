@@ -2,6 +2,7 @@
 const arrayMaori = [];
 const arrayEnglish = [];
 const arrayConservation = [];
+const arrayScientific = [];
 
 async function main() {
   const response = await fetch('./data/nzbird.json');
@@ -15,7 +16,7 @@ async function main() {
       const html = `
         <div class="bird-tile" id ="${birdSpecies.english_name}">
           <div class="photo-box">
-              <div class="gradient"></div>
+              <div class="gradient" id = "${birdSpecies.scientific_name}"></div>
               <img src=" ${birdSpecies.photo.source}" alt="Description of the image" />
               <div class="maori-name">
                 ${birdSpecies.primary_name};
@@ -37,17 +38,18 @@ async function main() {
               </div>
         </div>
       `;
-      
 
       arrayMaori[i] = birdSpecies.primary_name;
       arrayEnglish[i] = birdSpecies.english_name;
       arrayConservation[i] = birdSpecies.status;
+      arrayScientific[i] = birdSpecies.scientific_name;
 
       //console.log(arrayMaori[i]);
       //console.log(arrayEnglish[i]);
       e.innerHTML = html;
       document.querySelector('.bird-subgrid').append(e);
   }
+  setColour();
 }
 
 
@@ -99,7 +101,47 @@ function searchConservationFilter() {
   }
 }
 
+function setColour(status){
+  for(i = 0; i < arrayEnglish.length; i++){
+    scientificName = arrayScientific[i];
+    status = arrayConservation[i]
+    console.log(status);
 
+  if(status == "Not Threatened"){
+    document.getElementById(scientificName).setAttribute("style", "background: linear-gradient(0deg, rgb(2, 160, 40) 0, rgba(0, 0, 0, 0) 15%)");
+  } 
+  else if(status == "Naturally Uncommon"){
+    document.getElementById(scientificName).setAttribute("style", "background: linear-gradient(0deg, rgb(100, 154, 49) 0, rgba(0, 0, 0, 0) 15%)");
+  }
+  else if(status == "Relict"){
+    document.getElementById(scientificName).setAttribute("style", "background: linear-gradient(0deg, rgb(153, 203, 104) 0, rgba(0, 0, 0, 0) 15%)");
+  }
+  else if(status == "Recovering"){
+    document.getElementById(scientificName).setAttribute("style", "background: linear-gradient(0deg, rgb(254, 204, 51) 0, rgba(0, 0, 0, 0) 15%)");
+  }
+  else if(status == "Declining"){
+    document.getElementById(scientificName).setAttribute("style", "background: linear-gradient(0deg, rgb(254, 154, 1) 0, rgba(0, 0, 0, 0) 15%)");
+  }
+  else if(status == "Nationally Increasing"){
+    document.getElementById(scientificName).setAttribute("style", "background: linear-gradient(0deg, rgb(194, 105, 103) 0, rgba(0, 0, 0, 0) 15%)");
+  }
+  else if(status == "Nationally Vulnerable"){
+    document.getElementById(scientificName).setAttribute("style", "background: linear-gradient(0deg, rgb(155, 0, 0) 0, rgba(0, 0, 0, 0) 15%)");
+  }
+  else if(status == "Nationally Endangered"){
+    document.getElementById(scientificName).setAttribute("style", "background: linear-gradient(0deg, rgb(102, 0, 50) 0, rgba(0, 0, 0, 0) 15%)");
+  }
+  else if(status == "Nationally Critical"){
+    document.getElementById(scientificName).setAttribute("style", "background: linear-gradient(0deg, rgb(50, 0, 51) 0, rgba(0, 0, 0, 0) 15%)");
+  }
+  else if(status == "Extinct"){
+    document.getElementById(scientificName).setAttribute("style", "background: linear-gradient(0deg, rgb(0, 0, 0) 0, rgba(0, 0, 0, 0) 15%)");
+  }
+  else if(status == "Data Deficient"){
+    document.getElementById(scientificName).setAttribute("style", "background: linear-gradient(0deg, rgb(0, 0, 0) 0, rgba(0, 0, 0, 0) 15%)");
+  }
+}
+}
 
 
 main();
