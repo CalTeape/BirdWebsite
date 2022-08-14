@@ -50,7 +50,7 @@
 .conservation_block {
     background: rgb(255, 255, 255);
     padding-top: 1em;
-    width: 100%;
+    width: 15em;
     height: 22em;
     display: flex;
     flex-wrap: wrap;
@@ -69,14 +69,67 @@ ul {
 
 }
 
+.NH-dot {
+    background: #02a028;
+    left: 4.1em;
+}
+
+.NU-dot {
+    background: #649a31;
+    left: 1.2em;
+}
+
+.Relict-dot {
+    background: #99cb68;
+    left: 9.2em;
+}
+
+.Recovering-dot {
+    background: #fecc33;
+    left: 6.3em;
+}
+
+.Declining-dot {
+    background: #fe9a01;
+    left: 7.3em;
+}
+
+.NI-dot {
+    background: #c26967;
+    left: 1.5em;
+}
+
+.NV-dot {
+    background:	#9b0000;
+    left: 1.3em;
+}
+
+.NE-dot {
+    background:#660032;
+    left: .6em;
+}
+
+.NC-dot {
+    background:	#320033;
+    left: 3.2em;
+}
+
+.EX-dot {
+    background: black;
+    left: 8.8em;
+}
+
+.DD-dot {
+    background: black;
+    left: 4.9em;
+}
+
 .circle {
-    background: rgb(255, 0, 0);
     border-radius: 50%;
     width: 20px;
     height: 20px;  
     display: inline-block;
     position:relative;
-    left: 3em;
     border: 2px solid rgba(0, 0, 0, 0.445);
 }
 
