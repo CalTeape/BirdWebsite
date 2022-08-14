@@ -108,37 +108,37 @@ function setColour(status){
     console.log(status);
 
   if(status == "Not Threatened"){
-    document.getElementById(scientificName).setAttribute("style", "background: linear-gradient(0deg, rgb(2, 160, 40) 0, rgba(0, 0, 0, 0) 15%)");
+    document.getElementById(scientificName).setAttribute("style", "background: linear-gradient(0deg, rgb(2, 160, 40) 0, rgba(0, 0, 0, 0) 25%)");
   } 
   else if(status == "Naturally Uncommon"){
-    document.getElementById(scientificName).setAttribute("style", "background: linear-gradient(0deg, rgb(100, 154, 49) 0, rgba(0, 0, 0, 0) 15%)");
+    document.getElementById(scientificName).setAttribute("style", "background: linear-gradient(0deg, rgb(100, 154, 49) 0, rgba(0, 0, 0, 0) 25%)");
   }
   else if(status == "Relict"){
-    document.getElementById(scientificName).setAttribute("style", "background: linear-gradient(0deg, rgb(153, 203, 104) 0, rgba(0, 0, 0, 0) 15%)");
+    document.getElementById(scientificName).setAttribute("style", "background: linear-gradient(0deg, rgb(153, 203, 104) 0, rgba(0, 0, 0, 0) 25%)");
   }
   else if(status == "Recovering"){
-    document.getElementById(scientificName).setAttribute("style", "background: linear-gradient(0deg, rgb(254, 204, 51) 0, rgba(0, 0, 0, 0) 15%)");
+    document.getElementById(scientificName).setAttribute("style", "background: linear-gradient(0deg, rgb(254, 204, 51) 0, rgba(0, 0, 0, 0) 25%)");
   }
   else if(status == "Declining"){
-    document.getElementById(scientificName).setAttribute("style", "background: linear-gradient(0deg, rgb(254, 154, 1) 0, rgba(0, 0, 0, 0) 15%)");
+    document.getElementById(scientificName).setAttribute("style", "background: linear-gradient(0deg, rgb(254, 154, 1) 0, rgba(0, 0, 0, 0) 25%)");
   }
   else if(status == "Nationally Increasing"){
-    document.getElementById(scientificName).setAttribute("style", "background: linear-gradient(0deg, rgb(194, 105, 103) 0, rgba(0, 0, 0, 0) 15%)");
+    document.getElementById(scientificName).setAttribute("style", "background: linear-gradient(0deg, rgb(194, 105, 103) 0, rgba(0, 0, 0, 0) 25%)");
   }
   else if(status == "Nationally Vulnerable"){
-    document.getElementById(scientificName).setAttribute("style", "background: linear-gradient(0deg, rgb(155, 0, 0) 0, rgba(0, 0, 0, 0) 15%)");
+    document.getElementById(scientificName).setAttribute("style", "background: linear-gradient(0deg, rgb(155, 0, 0) 0, rgba(0, 0, 0, 0) 25%)");
   }
   else if(status == "Nationally Endangered"){
-    document.getElementById(scientificName).setAttribute("style", "background: linear-gradient(0deg, rgb(102, 0, 50) 0, rgba(0, 0, 0, 0) 15%)");
+    document.getElementById(scientificName).setAttribute("style", "background: linear-gradient(0deg, rgb(102, 0, 50) 0, rgba(0, 0, 0, 0) 25%)");
   }
   else if(status == "Nationally Critical"){
-    document.getElementById(scientificName).setAttribute("style", "background: linear-gradient(0deg, rgb(50, 0, 51) 0, rgba(0, 0, 0, 0) 15%)");
+    document.getElementById(scientificName).setAttribute("style", "background: linear-gradient(0deg, rgb(50, 0, 51) 0, rgba(0, 0, 0, 0) 25%)");
   }
   else if(status == "Extinct"){
-    document.getElementById(scientificName).setAttribute("style", "background: linear-gradient(0deg, rgb(0, 0, 0) 0, rgba(0, 0, 0, 0) 15%)");
+    document.getElementById(scientificName).setAttribute("style", "background: linear-gradient(0deg, rgb(0, 0, 0) 0, rgba(0, 0, 0, 0) 25%)");
   }
   else if(status == "Data Deficient"){
-    document.getElementById(scientificName).setAttribute("style", "background: linear-gradient(0deg, rgb(0, 0, 0) 0, rgba(0, 0, 0, 0) 15%)");
+    document.getElementById(scientificName).setAttribute("style", "background: linear-gradient(0deg, rgb(0, 0, 0) 0, rgba(0, 0, 0, 0) 25%)");
   }
 }
 }
